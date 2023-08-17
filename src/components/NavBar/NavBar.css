@@ -1,0 +1,10 @@
+.factoriaNav {
+    height: 64px;
+    background: white;
+    padding: 0 4.5vw;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid silver;
+}
