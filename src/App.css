@@ -1,0 +1,12 @@
+.cardContainer {
+    width: 100%;
+    height: calc(100vh - 128px);
+    padding: 0 4.5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #F5F5F5;
+}
