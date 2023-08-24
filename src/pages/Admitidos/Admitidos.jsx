@@ -1,19 +1,30 @@
 import "./Admitidos.css";
+import { codersAPI } from "../../components/services/codersAPI";
+
+import { useState, useEffect } from "react";
 
 import { CoderCard } from "../../components/CoderCard/CoderCard";
 
-import glasses from "./../../assets/images/glasses.jpg";
+import codersimg from "./../../assets/images/coders.jpg";
+import { BackButton } from "../../components/BackButton/BackButton";
+
 
 export const Admitidos = () => {
+
+    const [coders, setCoders] = useState([]);
+        
+    useEffect(() => {
+        codersAPI().then((coders) => setCoders(coders));
+    }, []);
+
     return (
+
         <main className="admitidosContainer">
-            <CoderCard imagen={glasses} nombre="Maite" apellidos="Presa Arribas" dni="XXXXXXXX-X"
-            bootcamp="FEM" porcentaje="100" showImage={true} />
-
-            <CoderCard imagen={glasses} nombre="Maite" apellidos="Presa Arribas" dni="XXXXXXXX-X"
-            bootcamp="FEM" porcentaje="100" showImage={true} />
-
-        </main>
+            <BackButton />
+            {coders && coders.map(({ID_CODER, ...coder}) => 
+                    <CoderCard imagen={codersimg} key={ID_CODER} showImage={true} id={ID_CODER} {...coder} />
+            )}
+        </main>       
 
     )
 }

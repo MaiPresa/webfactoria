@@ -1,3 +1,8 @@
+.linkStyles {
+    text-decoration: none;
+    color: black;
+}
+
 .coderCardContainer {
     height: 82px;
     width: 100%;
@@ -11,6 +16,8 @@
 .coderCardContainer .coderImage {
     height: 82px;
     width: 82px;
+
+    object-fit: cover;
 }
 
 .coderCardContainer .coderCardInfo {
@@ -24,29 +31,45 @@
     display: flex;
     flex-direction: column;
 
-    padding: 0 16px;
+    padding: 4px 16px;
 }
 
 .coderCardInfo .coderNameSurname {
     width: 100%;
-    height: 100%;
+    height: 65%;
 
     border-bottom: 1px solid silver;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
 }
 
 .coderCardInfo .coderNameSurname h3 {
-    font-size: 10px;
+    font-size: 14px;
     margin: 0;
 }
 
+.coderCardInfo .coderNameSurname h4 {
+    font-size: 12px;
+    font-weight: 100;
+
+    margin: 0;
+    margin-top: 4px;
+}
+
 .coderCardInfo .coderProps {
-    height: 100%;
+    height: 35%;
     width: 100%;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 16px;
+
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .coderBootcamp {
@@ -57,6 +80,8 @@
 
     border-radius: 24px;
 
+    font-size: 10px;
+    font-weight: 100;
 }
 
 .completo {
@@ -68,7 +93,7 @@
 }
 
 .espera {
-    color: coral;
+    color: silver;
 }
 
 .coderCardInfo .coderProps p {
