@@ -1,0 +1,20 @@
+.inputStyles {
+    width: 100%;
+}
+
+.inputStyles input {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+
+    width: 100%;
+    padding-top: 8px;
+    margin-top: 4px;
+
+    border: 0px;
+    border-bottom: 1px solid silver;
+}
+
+.inputStyles label {
+    color: silver;
+    font-size: 14px;
+}

@@ -1,0 +1,25 @@
+.btnFactoria {
+    height: 48px;
+    width: 100%;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+.btnOrange {
+    background-color: #FF4700;
+    color: white;
+    border: 0px;
+}
+
+.btnPaleOrange {
+    background-color: #FFA37F;
+    color: white;
+    border: 0px;
+}
+
+.btnOutline {
+    border: 2px solid #FF4700;
+    color: #FF4700;
+}
